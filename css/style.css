@@ -1,0 +1,194 @@
+/**
+ * projekt: Mobile first
+ **/
+
+/* Adobe fonts */
+@import url("https://use.typekit.net/iet2zpy.css");
+/* font-family: 'rig-shaded-medium-face', sans-serif; font-weight: 500; font-style: normal; */
+@import url("https://use.typekit.net/iet2zpy.css");
+/* font-family: 'franklin-gothic-urw', sans-serif; font-weight: 300; font-style: normal; */
+
+/* Variabler*/
+:root {
+  /* farver */
+  --white: #fcfcfc;
+  --offwhite: #f8f4f1;
+  --beige: #ece2d7;
+  --green: #7c8f67;
+  --black: #1d0b09;
+
+  /* fonte */
+  --overskrift: 'rig-shaded-medium-face', sans-serif; /* overskrifter */
+  --brødtekst: 'franklin-gothic-urw', sans-serif; /* brødtekst */
+
+  /* whitespace */
+  --whitespace: .5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Wrap */
+#wrap {
+  min-height: 100vh;
+  margin: auto;
+}
+
+/* Typography */
+h1 {
+  font-family: var(--overskrift);
+  color: var(--black);
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+}
+
+p {
+  font-family: var(--brødtekst);
+  color: var(--black);
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+}
+
+/* Billeder */
+img {
+  width: 100%;
+}
+
+/* FORSIDE - header */
+header {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* MOBIL */
+  background: var(--offwhite);
+  padding-bottom: 5%; /* MOBIL */
+}
+
+header img {
+  margin-bottom: 5%; /* MOBIL */
+}
+
+header .btn {
+  position: absolute;
+  top: 40%; /* MOBIL */
+  left: 50%; /* MOBIL */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: var(--green);
+  color: var(--white);
+  font-family: var(--overskrift);
+  font-size: 18px; /* MOBIL */
+  padding: 12px 35px;
+  padding-top: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 60px;
+  text-align: center;
+}
+
+header h2 {
+  position: absolute;
+  top: 20%; /* MOBIL */
+  text-align: center;
+  font-family: var(--brødtekst);
+  color: var(--black);
+}
+
+/* FORSIDE - kategorier */
+#kategorier img {
+  padding-top: 25px;
+}
+
+#kategorier .btn1 {
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+}
+
+/*her begynder mit css*/
+
+/*OM OS underside*/
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Typography */
+  h1 {
+    font-size: 1.4em;
+    text-align: center;
+
+  }
+  p {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .omosbilleder {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .omosp {
+    margin-bottom: 10%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .omosbilleder {
+    max-width: 450px;
+    display: inline;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .omosbilleder {
+    max-width: 450px;
+    display: inline;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .kasse {
+    background-color: var(--offwhite);
+    text-align: inherit;
+  }
+
+  .omosbilleder {
+    max-width: 450px;
+    display: inline;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .kasse {
+    background-color: var(--offwhite);
+    text-align: inherit;
+  }
+
+  article {
+    display: inline-flex;
+  }
+
+  .omosbilleder {
+    max-width: 450px;
+    display: inline;
+  }
+}
