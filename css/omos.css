@@ -203,7 +203,6 @@ width: 50%;
 .ikoner {
 display: flex;
 padding-top: 10px;
-padding-bottom: -40px;
 }
 
 /* fjern web footer*/
@@ -259,7 +258,7 @@ padding-bottom: -40px;
   display: flex;
   background-color: var(--offwhite);
   color: black;
-
+}
 
   /*footer*/
   /* sociale medie ikoner til footer*/
@@ -283,7 +282,6 @@ padding-bottom: -40px;
    text-align: center;
    color: black;
  }
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -385,7 +383,6 @@ padding-bottom: -40px;
      .ikoner {
      display: flex;
      padding-top: 10px;
-     padding-bottom: -40px;
      }
 
  /* kolonner til footer på computer */
@@ -394,7 +391,6 @@ padding-bottom: -40px;
        width: 100%;
      }
      .column {
-       display: center;
        width: 50%;
        background-color: #f8f4f1;
        font-family: var(--brødtekst);
@@ -509,7 +505,6 @@ padding-bottom: -40px;
      .ikoner {
      display: flex;
      padding-top: 10px;
-     padding-bottom: -40px;
      }
 
  /* kolonner til footer på computer */
@@ -518,7 +513,6 @@ padding-bottom: -40px;
        width: 100%;
      }
      .column {
-       display: center;
        width: 50%;
        background-color: #f8f4f1;
        font-family: var(--brødtekst);
@@ -626,7 +620,6 @@ padding-bottom: -40px;
      .ikoner {
      display: flex;
      padding-top: 10px;
-     padding-bottom: -40px;
      }
 
  /* kolonner til footer på computer */
@@ -635,7 +628,6 @@ padding-bottom: -40px;
        width: 100%;
      }
      .column {
-       display: center;
        width: 50%;
        background-color: #f8f4f1;
        font-family: var(--brødtekst);
@@ -649,5 +641,4 @@ padding-bottom: -40px;
      .footer{
        display: none;
  }
-
-}
+ }
