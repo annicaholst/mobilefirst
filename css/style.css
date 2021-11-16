@@ -23,7 +23,11 @@
 
   /* whitespace */
   --whitespace: .5rem;
+
+  /* teksturer ("fliselagte baggrunde") */
+--baggrund: url('images/baggrund.png')
 }
+
 
 * {
   box-sizing: border-box;
@@ -40,6 +44,12 @@ html {
 #wrap {
   min-height: 100vh;
   margin: auto;
+}
+
+/*baggrund */
+body {
+  background-image: var(--baggrund);
+  background-size:100% auto;
 }
 
 /* Typography */
@@ -118,7 +128,6 @@ header h2 {
 
 
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /* Typography */
@@ -130,8 +139,10 @@ header h2 {
   p {
     font-size: 1.4em;
     text-align: center;
+    margin: 1.5em;
   }
 
+/* opstilling af Susu og Katrins info på om os*/
   .omosbilleder {
     width: 80%;
     display: block;
@@ -141,23 +152,87 @@ header h2 {
 
   .omosp {
     margin-bottom: 10%;
+    margin: 1.5em;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  /* Typography */
+  h1 {
+    font-size: 1.4em;
+    text-align: center;
+
+  }
+  p {
+    font-size: 1.4em;
+    text-align: center;
+    margin: 1.5em;
+  }
+
+/* opstilling af Susu og Katrins info på om os*/
   .omosbilleder {
-    max-width: 450px;
-    display: inline;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .omosp {
+    margin-bottom: 10%;
+    margin: 1.5em;
+
   }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  /* Typografi til om os */
+  h1 {
+    text-align: center;
+  }
+
+  .omosh1 {
+    text-align: inherit;
+    font-size: 1.8em;
+    margin-left: 2em;
+  }
+
+  .omosp {
+    text-align: inherit;
+    font-size: 1.2em;
+    margin-left: 2.1em;
+
+  }
+
+  .infop {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+/* opstilling af Susu og Katrins info på om os*/
   .omosbilleder {
-    max-width: 450px;
+    width: 400px;
     display: inline;
+  }
+
+  .kasse {
+    background-color: var(--offwhite);
+    text-align: inherit;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    flex-direction: row-reverse;
+  }
+
+  section {
+    display: inline-flex;
+  }
+
+  .kassebillede {
+    margin: 10px;
+
   }
 
 }
@@ -165,30 +240,101 @@ header h2 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+  /* Typografi til om os */
+  h1 {
+    text-align: center;
+  }
+
+  .omosh1 {
+    text-align: inherit;
+    font-size: 2.2em;
+    margin-left: 3em;
+    margin-top: 2em;
+  }
+
+  .omosp {
+    text-align: inherit;
+    font-size: 1.8em;
+    margin-left: 4.2em;
+
+  }
+
+  .infop {
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 12em;
+    margin-right: 12em;
+  }
+
+/* opstilling af Susu og Katrins info på om os*/
+  .omosbilleder {
+    width: 450px;
+    display: inline;
+  }
+
   .kasse {
     background-color: var(--offwhite);
     text-align: inherit;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    flex-direction: row-reverse;
   }
 
-  .omosbilleder {
-    max-width: 450px;
-    display: inline;
+  section {
+    display: inline-flex;
+  }
+
+  .kassebillede {
+    margin: 10px;
+
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  /* Typografi til om os */
+  h1 {
+    text-align: center;
+  }
+
+  .omosh1 {
+    text-align: inherit;
+    font-size: 2em;
+  }
+
+  .omosp {
+    text-align: inherit;
+    font-size: 1.4em;
+
+  }
+
+  .infop {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+/* opstilling af Susu og Katrins info på om os*/
+  .omosbilleder {
+    width: 450px;
+    display: inline;
+  }
+
   .kasse {
     background-color: var(--offwhite);
     text-align: inherit;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    flex-direction: row-reverse;
   }
 
-  article {
+  section {
     display: inline-flex;
   }
 
-  .omosbilleder {
-    max-width: 450px;
-    display: inline;
+  .kassebillede {
+    margin: 10px;
+
   }
+
 }
