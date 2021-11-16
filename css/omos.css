@@ -77,6 +77,14 @@ p {
   padding: 0.1em;
 }
 
+.parkering {
+  padding-bottom: 10%;
+}
+
+.omos {
+  padding-top: 2em;
+}
+
 /* Billeder */
 img {
   width: 100%;
@@ -634,6 +642,7 @@ padding-top: 10px;
        font-size: 20px;
        text-align: center;
        color: black;
+       padding-bottom: 2em;
 
      }
 
