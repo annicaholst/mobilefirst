@@ -25,7 +25,8 @@
   --whitespace: .5rem;
 
   /* teksturer ("fliselagte baggrunde") */
---baggrund: url('images/baggrund.png')
+   --baggrund: url('../images/baggrund.png');
+
 }
 
 
@@ -65,6 +66,10 @@ p {
   color: var(--black);
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
+}
+
+#copyright {
+  font-size: 15px;
 }
 
 /* Billeder */
