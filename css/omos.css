@@ -72,6 +72,11 @@ p {
   font-size: 15px;
 }
 
+.copyright {
+  background-color: var(--white);
+  padding: 0.1em;
+}
+
 /* Billeder */
 img {
   width: 100%;
@@ -159,6 +164,61 @@ header h2 {
     margin-bottom: 10%;
     margin: 1.5em;
   }
+
+  /* navbar burgermenu ved lille skærm */
+ .burgermenu{
+   position: absolute;
+   top: 1.5rem;
+   right: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+ .burgermenu .bar{
+   height: 3px;
+   width: 100%;
+   background-color: var(--black);
+   border-radius: 10px;
+ }
+
+ .navbar-links{
+   display: none;
+ }
+
+ .navbar{
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.navbar img{
+ display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+  /*footer*/
+/* sociale medie ikoner til footer*/
+.ikoner {
+display: flex;
+padding-top: 10px;
+padding-bottom: -40px;
+}
+
+/* fjern web footer*/
+.row{
+  display: none;
+}
+
+
+.footer{
+  background-color: #f8f4f1;
+  font-family: franklin-gothic-urw;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -188,6 +248,41 @@ header h2 {
     margin: 1.5em;
 
   }
+
+  /* navbar burgermenu */
+  .burgermenu{
+    display:none;
+  }
+
+/* navigationsbar */
+.navbar{
+  display: flex;
+  background-color: var(--offwhite);
+  color: black;
+
+
+  /*footer*/
+  /* sociale medie ikoner til footer*/
+ .ikoner {
+ display: flex;
+ }
+
+ /* fjern web footer*/
+ .row{
+   display: none;
+ }
+
+.br{
+ margin: 0px;
+}
+
+ .footer{
+   background-color: #f8f4f1;
+   font-family: franklin-gothic-urw;
+   font-size: 20px;
+   text-align: center;
+   color: black;
+ }
 
 }
 
@@ -239,6 +334,80 @@ header h2 {
     margin: 10px;
 
   }
+
+  /* navbar burgermenu */
+   .burgermenu{
+     display:none;
+   }
+
+ /* navigationsbar */
+ .navbar{
+   display: flex;
+   background-color: var(--offwhite);
+   color: black;
+ }
+
+ .navbar img{
+   margin: 1.5rem;
+   margin-left: 10%;
+
+ }
+
+ .navbar-links ul{
+   margin: 0;
+   padding-top: 17px;
+   display: flex;
+   font-family: var(--brødtekst);
+   font-size: 20px;
+
+ }
+
+ .navbar-links li{
+   list-style: none;
+   padding-right: 20px;
+   padding-bottom: 10px;
+
+ }
+
+ .navbar-links li a{
+   text-decoration: none;
+   color: black;
+   padding: 1rem;
+   margin-right: 15px;
+   display: block;
+
+
+ }
+
+  /*footer*/
+  /* sociale medie ikoner til footer*/
+
+     .ikoner {
+     display: flex;
+     padding-top: 10px;
+     padding-bottom: -40px;
+     }
+
+ /* kolonner til footer på computer */
+     .row{
+       display: flex;
+       width: 100%;
+     }
+     .column {
+       display: center;
+       width: 50%;
+       background-color: #f8f4f1;
+       font-family: var(--brødtekst);
+       font-size: 20px;
+       text-align: center;
+       color: black;
+
+     }
+
+ /* fjern visning af den mobile footer*/
+     .footer{
+       display: none;
+ }
 
 }
 
@@ -294,6 +463,75 @@ header h2 {
     margin-bottom: 10px;
     margin-right: 3em;
   }
+
+
+    /* navigationsbar */
+    .navbar{
+      display: flex;
+      background-color: var(--offwhite);
+      color: black;
+    }
+
+    .navbar img{
+      margin: 1.5rem;
+      margin-left: 10%;
+
+    }
+
+    .navbar-links ul{
+      margin: 0;
+      padding-top: 17px;
+      display: flex;
+      font-family: var(--brødtekst);
+      font-size: 20px;
+
+    }
+
+    .navbar-links li{
+      list-style: none;
+      padding-right: 20px;
+      padding-bottom: 10px;
+
+    }
+
+    .navbar-links li a{
+      text-decoration: none;
+      color: black;
+      padding: 1rem;
+      margin-right: 15px;
+      display: block;
+
+
+    }
+  /*footer*/
+  /* sociale medie ikoner til footer*/
+
+     .ikoner {
+     display: flex;
+     padding-top: 10px;
+     padding-bottom: -40px;
+     }
+
+ /* kolonner til footer på computer */
+     .row{
+       display: flex;
+       width: 100%;
+     }
+     .column {
+       display: center;
+       width: 50%;
+       background-color: #f8f4f1;
+       font-family: var(--brødtekst);
+       font-size: 20px;
+       text-align: center;
+       color: black;
+
+     }
+
+ /* fjern visning af den mobile footer*/
+     .footer{
+       display: none;
+ }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -344,5 +582,72 @@ header h2 {
     margin-right: 3em;
 
   }
+
+
+      /* navigationsbar */
+      .navbar{
+        display: flex;
+        background-color: var(--offwhite);
+        color: black;
+      }
+
+      .navbar img{
+        margin: 1.5rem;
+        margin-left: 10%;
+
+      }
+
+      .navbar-links ul{
+        margin: 0;
+        padding-top: 17px;
+        display: flex;
+        font-family: var(--brødtekst);
+        font-size: 20px;
+
+      }
+
+      .navbar-links li{
+        list-style: none;
+        padding-right: 50px;
+        padding-bottom: 10px;
+
+      }
+
+      .navbar-links li a{
+        text-decoration: none;
+        color: black;
+        padding: 1rem;
+        margin-right: 15px;
+        display: block;
+    }
+  /*footer*/
+  /* sociale medie ikoner til footer*/
+
+     .ikoner {
+     display: flex;
+     padding-top: 10px;
+     padding-bottom: -40px;
+     }
+
+ /* kolonner til footer på computer */
+     .row{
+       display: flex;
+       width: 100%;
+     }
+     .column {
+       display: center;
+       width: 50%;
+       background-color: #f8f4f1;
+       font-family: var(--brødtekst);
+       font-size: 20px;
+       text-align: center;
+       color: black;
+
+     }
+
+ /* fjern visning af den mobile footer*/
+     .footer{
+       display: none;
+ }
 
 }
